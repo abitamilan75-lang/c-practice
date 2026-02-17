@@ -1,0 +1,23 @@
+ #include <stdio.h>
+
+int main() {
+    int A, B, lcm;
+
+    
+    scanf("%d %d", &A, &B);
+
+    
+    int max = (A > B) ? A : B;
+
+    
+    for (lcm = max; ; lcm++) {
+        if (lcm % A == 0 && lcm % B == 0) {
+            break;
+        }
+    }
+
+    
+    printf("%d", lcm);
+
+    return 0;
+}
